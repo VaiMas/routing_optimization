@@ -1,11 +1,12 @@
 # Van Routing Optimization
 
-A Python solution for optimizing van delivery routes, considering van capacity, fuel efficiency, and package weights.
+A Python solution for optimizing van delivery routes, considering van capacity, 
+fuel efficiency, and package weights.
 
 ## Project Structure
 ```
 .
-├── README.MD
+├── README.md
 ├── requirements.txt
 ├── src
 │   ├── __init__.py
@@ -23,6 +24,11 @@ A Python solution for optimizing van delivery routes, considering van capacity, 
 
 ## Usage Example
 ```python
+from routing_optimization import (
+    find_optimal_route_for_single_van,
+    find_optimal_route_for_multiple_vans,
+)
+
 # Single van routing
 van_stats = [(10, 10), (9, 8)]  # (capacity, fuel_per_unit)
 packages = [(-1, 5, 4), (6, 2, 9)]  # (pickup, delivery, weight)
@@ -40,7 +46,7 @@ vans_used, total_distance, total_fuel, routes = find_optimal_route_for_multiple_
 ## Installation
 1. Clone the repository:
 ```sh
-git clone https://github.com/yourusername/routing-optimization.git
+git clone https://github.com/VaiMas/routing-optimization.git
 cd routing-optimization
 ```
 
